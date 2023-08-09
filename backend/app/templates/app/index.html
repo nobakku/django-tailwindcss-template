@@ -1,11 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DjangoでTailwindCSSを使用する方法</title>
-</head>
-<body>
-  <div>DjangoでTailwindCSSを使用</div>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% comment %} <script src="https://cdn.tailwindcss.com"></script> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <title>DjangoでTailwindCSSを使用する方法</title>
+  </head>
+  <body>
+    <div class="text-center m-5">
+      <div class="bg-slate-400 p-5 inline-block rounded">
+        <div class="text-3xl font-bold">DjangoでTailwindCSSを使用する方法</div>
+      </div>
+    </div>
+  </body>
 </html>
